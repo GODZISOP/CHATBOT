@@ -332,7 +332,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ isOpen, onToggle }) => {
                 <button
                   onClick={handleSendMessage}
                   disabled={isLoading || !inputText.trim()}
-                  className="bg-gradient-to-r from-blue-600 to-teal-600 text-white p-3 rounded-lg hover:shadow-lg transition-all duration-200 disabled:opacity-50"
+                  className="bg-gradient-to-r from-blue-60 to-teal-600 text-white p-3 rounded-lg hover:shadow-lg transition-all duration-200 disabled:opacity-50"
                 >
                   <Send className="h-5 w-5" />
                 </button>
