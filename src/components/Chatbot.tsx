@@ -15,7 +15,7 @@ interface ChatbotProps {
 }
 
 const Chatbot: React.FC<ChatbotProps> = ({ isOpen, onToggle }) => {
-  const API_BASE = 'https://chatbot-c23f-rkqwzl4kx-godzisops-projects.vercel.app'; // ✅ Updated URL
+  const API_BASE = 'https://chatbot-c23f.vercel.app/'; // ✅ Updated URL
 
   const [messages, setMessages] = useState<Message[]>([
     {
