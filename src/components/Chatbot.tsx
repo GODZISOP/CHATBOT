@@ -57,7 +57,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ isOpen, onToggle }) => {
   const handleBooking = async (name: string, email: string) => {
     try {
       setIsLoading(true);
-      const response = await fetch(`http://localhost:5000/api/book-meeting`, { // Change here
+      const response = await fetch(`https://chatbot-c23f.vercel.app/api/book-meeting`, { // Change here
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -171,7 +171,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ isOpen, onToggle }) => {
 
     // Regular chat functionality
     try {
-      const response = await fetch(`http://localhost:5000/api/chat`, { // Change here
+      const response = await fetch(`https://chatbot-c23f.vercel.app//api/chat`, { // Change here
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
