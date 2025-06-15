@@ -171,7 +171,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ isOpen, onToggle }) => {
 
     // Regular chat functionality
     try {
-      const response = await fetch(`https://chatbot-c23f.vercel.app//api/chat`, { // Change here
+      const response = await fetch(`https://chatbot-c23f.vercel.app/api/chat`, { // Change here
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
