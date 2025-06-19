@@ -89,16 +89,16 @@ const Chatbot: React.FC<ChatbotProps> = ({ isOpen, onToggle }) => {
     }
   };
 
-  const getNextQuestion = () => {
-    if (!conversationContext.askedAboutGoals)
-      return "Great! What are your main goals with coaching?";
-    else if (!conversationContext.askedAboutExperience)
-      return "Have you worked with a coach before, or is this your first time?";
-    else if (!conversationContext.askedAboutTimeframe)
-      return "When are you looking to get started? Soon or later?";
-    else
-      return "Would you like me to help you schedule a consultation with a coach?";
-  };
+const getNextQuestion = () => {
+  if (!conversationContext.askedAboutGoals)
+    return "What would you like to achieve with coaching?";
+  else if (!conversationContext.askedAboutExperience)
+    return "Have you ever worked with a coach before?";
+  else if (!conversationContext.askedAboutTimeframe)
+    return "Are you thinking of getting started soon?";
+  else
+    return "Would you like help booking a free consultation?";
+};
 
   const updateConversationContext = (userMessage: string) => {
     const lower = userMessage.toLowerCase();
