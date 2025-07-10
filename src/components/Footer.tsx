@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="text-2xl font-bold">CoachMaster</span>
             </div>
             <p className="text-gray-400 max-w-md mb-6">
-              Empowering individuals to achieve their highest potential through personalized coaching and proven strategies for success.
+              Empowering individuals to achive their highest potential through personalized coaching and proven strategies for success.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
